@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Екатерина Селифанова](https://up.htmlacademy.ru/htmlcss/35/user/2184843).
-* Наставник: [Анна Рус] (https://htmlacademy.ru/profile/vanillawulf).
+* Наставник: [Анна Рус](https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 
