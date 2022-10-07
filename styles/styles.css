@@ -147,7 +147,7 @@ h2 {
   text-transform: uppercase;
 }
 
-.sort {
+.inner-header {
   background-color: #6689A9;
   background-image: url(../images/catalog-bg.jpg);
   background-size: 100% auto;
