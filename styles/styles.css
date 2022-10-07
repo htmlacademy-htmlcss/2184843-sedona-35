@@ -41,6 +41,10 @@ body {
   background-color:#82B3D3;
 }
 
+.button-green {
+  background-color:#7DB54F;
+}
+
 .main-header {
   color: #000000;
   background-color: #ffffff;
@@ -141,4 +145,11 @@ h2 {
   line-height: 40px;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.sort {
+  background-color: #6689A9;
+  background-image: url(../images/catalog-bg.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
