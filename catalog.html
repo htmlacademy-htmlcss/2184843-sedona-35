@@ -9,17 +9,19 @@
 
   <body>
     <header class="main-header">
-      <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="index.html">Главная</a>
+            <img class="page-header-logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
@@ -40,6 +42,7 @@
     </header>
 
     <header class="inner-header">
+      <div class="inner-header-container">
       <h1 class="inner-header-title white">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
@@ -53,7 +56,7 @@
       </ul>
 
       <section class="catalog-filter">
-        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+        <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
           <fieldset class="catalog-filter-group">
@@ -125,9 +128,11 @@
           <button class="button button-no-bg" type="reset">Сбросить</button>
         </form>
       </section>
+    </div>
     </header>
 
-    <main class="main-inner">
+    <main class="main-inner main-container">
+      <div class="page-container">
       <section class="catalog-sort">
         <p class="hotels-found">Найдено гостиниц:<span>38</span></p>
         <div class="sort-view-container">
@@ -239,11 +244,11 @@
           <button class="button button-light" type="submit">Подписаться</button>
         </form>
       </section>
-
+    </div>
     </main>
 
     <footer>
-      <section class="footer-social">
+      <div class="page-footer-container">
         <h2 class="visually-hidden">Социальные сети.</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -265,10 +270,10 @@
         <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         <p>
           <a href="https://htmlacademy.ru/">
-            <img src="images/html-logo.svg" width="115" height="33" alt="Логотип html academy.">
+            <img class="html-logo" src="images/html-logo.svg" width="115" height="33" alt="Логотип html academy.">
           </a>
         </p>
-      </section>
+      </div>
     </footer>
 
   </body>
