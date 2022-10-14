@@ -151,6 +151,14 @@ h2 {
   padding: 0;
 }
 
+.advantages-group {
+  display: flex;
+}
+
+.advantage-1 {
+  width: 100%;
+}
+
 .navigation-list,
 .advantages-list,
 .recommendations-list,
