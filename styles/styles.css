@@ -31,6 +31,7 @@ body {
   background-color: #F2F2F2;
 }
 
+/* Кнопки */
 .button {
   font-family: inherit;
   font-size: 20px;
@@ -53,15 +54,18 @@ body {
   background-color:#7DB54F;
 }
 
+/* main-container */
 .main-container {
   flex-grow: 1;
 }
 
+/* Хедер */
 .main-header {
   color: #000000;
   background-color: #ffffff;
 }
 
+/* Навигация */
 .navigation {
   display: flex;
   width: 1060px;
@@ -72,7 +76,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  width: 550px;
+  width: 460px;
 }
 
 .navigation-user {
@@ -90,12 +94,14 @@ body {
   text-decoration: none;
 }
 
+/* Pages */
 .page-container {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
 }
 
+/* Hero */
 .welcome-block {
   background-image: url("../images/index-background.jpg");
   background-size: 1200px 485px;
@@ -113,6 +119,7 @@ h2 {
   text-transform: uppercase;
 }
 
+/* Описание */
 .description {
   font-size: 22px;
   line-height: 26px;
@@ -120,19 +127,28 @@ h2 {
   color: #000000;
 }
 
-.sedona-description-container {
+.sedona-description {
   padding-top: 69px;
   padding-bottom: 90px;
 }
 
+/* Белый текст */
 .white {
   color: #ffffff;
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   text-align: center;
+}
+
+.advantages-item {
+  width: 400px;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation-list,
@@ -140,7 +156,9 @@ h2 {
 .recommendations-list,
 .footer-social-list,
 .breadcrumbs,
-.catalog-filter-list {
+.catalog-filter-list,
+.product-list,
+.pagination {
   list-style-type: none;
 }
 
