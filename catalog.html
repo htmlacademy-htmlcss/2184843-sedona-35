@@ -61,7 +61,7 @@
         <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
         <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group filter-checkbox">
             <legend class="catalog-filter-title white">Инфраструктура:</legend>
             <ul class="catalog-filter-list white">
               <li class="catalog-filter-item">
@@ -87,7 +87,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group filter-radio">
             <legend class="catalog-filter-title white">Тип жилья:</legend>
             <ul class="catalog-filter-list white">
               <li class="catalog-filter-item">
@@ -113,7 +113,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter-group">
+          <fieldset class="catalog-filter-group filter-price">
             <legend class="catalog-filter-title white">Стоимость, ₽:</legend>
             <label class="catalog-filter-input-label">
               <input type="text" name="От" value="0">
@@ -125,8 +125,10 @@
             </label>
           </fieldset>
 
+        <div class="buttons-container">
           <button class="button button-light" type="submit">Применить</button>
           <button class="button button-no-bg" type="reset">Сбросить</button>
+        </div>
         </form>
       </section>
     </div>
