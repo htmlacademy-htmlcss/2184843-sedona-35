@@ -48,11 +48,11 @@ body {
 }
 
 .button-light {
-  background-color:#82B3D3;
+  background-color: #82B3D3;
 }
 
 .button-green {
-  background-color:#7DB54F;
+  background-color: #7DB54F;
 }
 
 .button-no-bg {
@@ -310,7 +310,7 @@ ul {
   padding: 0;
 }
 
-.catalog-filter-form{
+.catalog-filter-form {
   display: flex;
 }
 
@@ -319,7 +319,7 @@ ul {
   flex-direction: column;
 }
 
-.catalog-filter-list{
+.catalog-filter-list {
   padding: 0;
 }
 
@@ -339,7 +339,7 @@ ul {
   margin-right: 70px;
 }
 
-.filter-radio{
+.filter-radio {
   margin-right: 140px;
 }
 
