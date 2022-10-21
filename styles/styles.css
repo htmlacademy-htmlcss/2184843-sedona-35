@@ -278,28 +278,50 @@ ul {
   text-align: center;
 }
 
-.page-footer-container {
+.page-footer {
   background-color: #ffffff;
-  display: flex;
   width: 1200px;
   margin: 0 auto;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 40px 0 30px;
+  align-items: center;
+}
+
 .footer-social-list {
+  display: flex;
   width: 200px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social-item {
+  padding: 13px 12px;
+}
+
+.social-link {
+  min-width: 24px;
+  min-height: 14px;
 }
 
 .contacts-phone {
+  display: flex;
   width: 720px;
   color: #000000;
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
-  text-transform: uppercase;
+  justify-content: center;
 }
 
-.html-logo {
-  width: 115px;
+.footer-html-logo {
+  display: flex;
+  min-width: 115px;
+  margin-left: auto;
 }
 
 .inner-header {
