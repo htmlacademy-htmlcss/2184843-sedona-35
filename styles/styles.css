@@ -56,6 +56,8 @@ body {
   border: 0;
   border-radius: 4px;
   display: inline-block;
+  margin: 0;
+  padding: 0;
 }
 
 .button-light {
@@ -268,6 +270,12 @@ ul {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  width: 250px;
+}
+
+.advantages-description,
+.reccomendations-description {
+  width: 250px;
 }
 
 .reccomendations-title {
@@ -417,7 +425,7 @@ ul {
 }
 
 .catalog-filter-group {
-  width: 200px;
+  /* width: 200px; */
   padding: 0;
   margin: 0;
   border: 0;
@@ -434,7 +442,7 @@ ul {
 }
 
 .filter-price {
-  width: 290px;
+  min-width: 290px;
   margin-right: 70px;
 }
 
@@ -471,6 +479,13 @@ ul {
   align-items: center;
 }
 
+.button-view {
+  display: block;
+  width: 16px;
+  height: 14px;
+  padding: 17px 16px;
+}
+
 .hotels-found {
   font-weight: 700;
   font-size: 30px;
@@ -480,12 +495,15 @@ ul {
   padding: 0;
 }
 
+/* Catalog */
+
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
   margin: 0;
   padding: 0;
+  margin-bottom: 80px;
 }
 
 .product-card {
@@ -493,13 +511,7 @@ ul {
   padding: 20px;
   outline: 1px solid #E6E6E6;
   border-radius: 4px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   box-sizing: border-box;
-}
-
-.product-card:nth-child(3n) {
-  margin-right: 0;
 }
 
 .product-card-title {
@@ -507,10 +519,26 @@ ul {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 16px 0;
+}
+
+.product-card-buttons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 16px;
+}
+
+.product-card-price {
+  margin-left: auto;
 }
 
 .product-card-link {
   text-decoration: none;
+}
+
+.pagination-container {
+  display: flex;
 }
 
 .pagination {
@@ -519,14 +547,27 @@ ul {
   margin: 0;
 }
 
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
   color: #ffffff;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
   background-color: #82B3D3;
-  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.white-pagination-link {
+  color: #000000;
+  background-color: transparent;
 }
 
 .pagination-current {
