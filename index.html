@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   </head>
 
   <body>
@@ -191,61 +192,89 @@
       </div>
     </footer>
 
-<!-- Модальное окно -->
-    <div class="modal-container">
+    <!-- Модальное окно -->
+    <div class="modal-container modal-container-close">
       <div class="modal modal-search-hotels">
-        <button class="modal-close-button">
-          <span class="visually-hidden">Закрыть</span>
-        </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
 
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <div class="search-form-field">
-              <label class="search-form-label search-form-label-icon-cal" for="search-date-in">Дата Заезда:</label>
+            <div class="search-form-field search-form-input-calendar">
+              <label class="search-form-label" for="search-date-in">Дата Заезда:</label>
               <input class="search-form-input field field-error" type="text" id="search-date-in" name="search-date-in"
-                placeholder="Укажите дату" value="27 апреля 2020">
-              <span class="field-message field-message-error" hidden>Мы не можем отправить вас в прошлое</span>
+                placeholder="27 апреля 2020">
+              <span class="field-message field-message-error">Мы не можем отправить вас в прошлое.</span>
             </div>
-            <div class="search-form-field">
+
+            <div class="search-form-field search-form-input-calendar">
               <label class="search-form-label search-form-label-icon-cal" for="search-date-out">Дата Выезда:</label>
               <input class="search-form-input field field-success" type="text" id="search-date-out"
-                name="search-date-out" placeholder="Укажите дату" value="1 сентября 2023">
-              <span class="field-message field-message-success" hidden>На эти даты есть свободные номера. Пока
+                name="search-date-out" placeholder="1 сентября 2023">
+              <span class="field-message field-message-success">На эти даты есть свободные номера. Пока
                 есть.</span>
             </div>
 
             <div class="search-form-field-container">
-              <div class="search-form-field">
+              <div class="search-form-field guests-counter">
                 <label class="search-form-label" for="search-adult">Взрослые:</label>
                 <div class="search-form-number-control">
                   <button class="button-number button-number-minus" type="button">
                     <span class="visually-hidden">Кнопка минус</span>
+                    <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                      <path d="M0 0v2h14V0H0Z" />
+                    </svg>
                   </button>
+
                   <input class="search-form-input search-form-input-number" type="number" id="search-adult"
                     name="search-adult" value="2">
                   <button class="button-number button-number-plus" type="button">
                     <span class="visually-hidden">Кнопка плюс</span>
+                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                      viewBox="0 0 14 14">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                    </svg>
                   </button>
                 </div>
               </div>
 
-              <div class="search-form-field search-form-field-with-tooltip">
-                <label class="search-form-label" for="search-children">Дети:</label>
+              <div class="search-form-field search-form-field-with-tooltip guests-counter">
+                <span class="search-form-label form-label-icon">
+                  <label class="search-form-label" for="search-children">Дети:</label>
+
+                  <!-- Тултип -->
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                      <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                        viewBox="0 0 26 26">
+                        <circle cx="13" cy="13" r="13" fill="#83B3D3" />
+                        <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                      будут с вами, возраст которых от 6 до
+                      18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
+
+                </span>
                 <div class="search-form-number-control">
                   <button class="button-number button-number-minus" type="button">
                     <span class="visually-hidden">Кнопка минус</span>
+                    <svg class="minus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                      <path d="M0 0v2h14V0H0Z" />
+                    </svg>
                   </button>
                   <input class="search-form-input search-form-input-number" type="number" id="search-children"
-                    name="search-children" value="2" aria-describedby="tooltip-search-children">
+                    name="search-children" value="2">
                   <button class="button-number button-number-plus" type="button">
                     <span class="visually-hidden">Кнопка плюс</span>
+                    <svg class="plus-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                      viewBox="0 0 14 14">
+                      <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                    </svg>
                   </button>
-
-<!--                   <span class="tooltip">
-                    <span class="tooltip-text" role="tooltip" id="tooltip-search-children">Укажите количество детей,
-                      которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                  </span> -->
                 </div>
 
               </div>
