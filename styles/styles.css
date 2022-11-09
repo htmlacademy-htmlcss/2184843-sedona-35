@@ -269,13 +269,13 @@ body {
 }
 
 .navigation-user .navigation-item:nth-child(1) .navigation-link {
-  background-image: url("/images/search.svg");
+  background-image: url("../images/search.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .navigation-user .navigation-item:nth-child(2) .navigation-link {
-  background-image: url("/images/heart.svg");
+  background-image: url("../images/heart.svg");
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
