@@ -339,6 +339,7 @@ p {
 
 .sedona-title {
   margin-bottom: 25px;
+  padding: 0 50px;
 }
 
 /* Описание */
@@ -347,6 +348,7 @@ p {
   line-height: 26px;
   text-align: center;
   color: #000000;
+  padding: 0 50px;
 }
 
 .sedona-description {
@@ -385,8 +387,13 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding-bottom: 17px;
+  padding-top: 93px;
+  padding-bottom: 111px;
+}
+
+.advantage-wrapper {
+  padding-bottom: 121px;
+  padding-top: 103px;
 }
 
 .advantages-group {
@@ -418,12 +425,17 @@ ul {
 }
 
 .advantages-title,
-.reccomendations-title {
+.recommendations-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   width: 250px;
+}
+
+.recommendations-wrapper {
+  padding-top: 182px;
+  padding-bottom: 81px;
 }
 
 /* Разделители */
@@ -441,12 +453,11 @@ ul {
 }
 
 .advantages-description,
-.reccomendations-description {
+.recommendations-description {
   width: 250px;
 }
 
-.reccomendations-title {
-  margin-top: 100px;
+.recommendations-title {
   margin-bottom: 30px;
 }
 
@@ -459,7 +470,7 @@ ul {
 .card-home {
   background-image: url("../images/house-icon.svg");
   background-repeat: no-repeat;
-  background-position: left 50% top 70px;
+  background-position: left 50% top 78px;
 }
 
 .card-food {
@@ -471,7 +482,7 @@ ul {
 .card-gift {
   background-image: url("../images/souvenirs-icon.svg");
   background-repeat: no-repeat;
-  background-position: left 50% top 70px;
+  background-position: left 50% top 78px;
 }
 
 .hotel-search {
@@ -479,13 +490,13 @@ ul {
 }
 
 .hotel-search-container {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding: 96px 50px;
 }
 
 .subscribe-container {
   padding-top: 96px;
   padding-bottom: 104px;
+  padding: 96px 50px 104px;
 }
 
 .hotel-search-title,
@@ -505,17 +516,19 @@ ul {
 .subscription-form {
   display: flex;
   justify-content: center;
+  align-items: stretch;
 }
 
 .subscription-form .button {
   padding: 8px 50px;
   border-radius: 0 4px 4px 0;
   margin: 0;
+  max-width: 400px;
 }
 
 .email-field {
   width: 430px;
-  height: 50px;
+  min-height: 50px;
   font-family: "PT Sans", sans-serif;
   padding-left: 20px;
   font-size: 18px;
@@ -526,15 +539,26 @@ ul {
 }
 
 .email-field:hover {
-  background-color: #E6E6E6;
+  background: #E6E6E6;
+}
+
+.email-field:focus {
+  background: #E6E6E6;
+  outline: 3px solid #83B3D3;
+  border: none;
+}
+
+.email-field:active {
+  background: #E6E6E6;
+  outline: 2px solid #000000;
 }
 
 .newsletter {
   background-image: url("../images/subscribe.jpg");
-  background-size: 100% auto;
   background-repeat: no-repeat;
   background-color: #5582AD;
   text-align: center;
+  background-size: cover;
 }
 
 .page-footer {
@@ -610,6 +634,8 @@ ul {
   min-width: 115px;
   margin-left: auto;
   position: relative;
+  flex-wrap: wrap;
+  min-height: 32px;
 }
 
 .html-logo-icon {
@@ -630,6 +656,7 @@ ul {
   fill: rgba(117, 97, 87, 0.3);
 }
 
+/* Каталог */
 .inner-header {
   background-color: #6689A9;
   background-image: url("../images/catalog-bg.jpg");
@@ -668,9 +695,8 @@ ul {
 .buttons-container {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 56px 0 0 0;
   padding: 0;
-  justify-content: end;
 }
 
 .buttons-container .button-light {
@@ -680,8 +706,9 @@ ul {
 .buttons-container .button {
   font-size: 16px;
   line-height: 20px;
-  width: 191px;
-  height: 36px;
+  min-width: 191px;
+  min-height: 36px;
+  padding: 8px 50px;
 }
 
 .catalog-filter-list {
@@ -997,6 +1024,8 @@ ul {
 .sort-view-container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .select-control {
@@ -1104,8 +1133,7 @@ ul {
 .product-card .button {
   font-size: 16px;
   line-height: 20px;
-  width: 140px;
-  height: 36px;
+  min-height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1137,7 +1165,7 @@ ul {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  margin: 16px 0;
+  margin: 17px 0 16px;
 }
 
 .product-card-buttons-container {
@@ -1181,18 +1209,16 @@ ul {
   display: flex;
   padding: 0;
   margin: 0;
-}
-
-.pagination-item:not(:last-child) {
-  margin-right: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .pagination-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   color: #ffffff;
   font-weight: 700;
   font-size: 20px;
