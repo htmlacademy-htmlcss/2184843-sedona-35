@@ -494,8 +494,6 @@ ul {
 }
 
 .subscribe-container {
-  padding-top: 96px;
-  padding-bottom: 104px;
   padding: 96px 50px 104px;
 }
 
@@ -530,7 +528,8 @@ ul {
   width: 430px;
   min-height: 50px;
   font-family: "PT Sans", sans-serif;
-  padding-left: 20px;
+  padding: 0 0 0 20px;
+  margin: 0;
   font-size: 18px;
   line-height: 24px;
   border: none;
@@ -576,10 +575,12 @@ ul {
 .footer-social-list {
   display: flex;
   flex-wrap: wrap;
+  min-height: 50px;
   max-width: 144px;
   padding: 0;
   margin: 0;
   margin-right: 42px;
+  align-items: center;
 }
 
 .footer-social-item {
