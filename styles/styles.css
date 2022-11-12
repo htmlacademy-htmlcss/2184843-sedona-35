@@ -284,12 +284,12 @@ body {
 
 /* Hero */
 .welcome-block {
+  background-color: #80b2cd;
   background-image: url("../images/index-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   text-align: center;
-  background-color: #80b2cd;
-  height: 485px;
+  min-height: 485px;
   position: relative;
 }
 
@@ -550,9 +550,9 @@ body {
 }
 
 .newsletter {
+  background-color: #5582AD;
   background-image: url("../images/subscribe.jpg");
   background-repeat: no-repeat;
-  background-color: #5582AD;
   text-align: center;
   background-size: cover;
 }
